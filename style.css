@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f0f0f0;
+    font-family: Roboto, sans-serif ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    
+}
+header{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   flex-wrap: nowrap;
+    padding: 1.5rem 0;
+background-image: url(header.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+text-shadow: 2px 2px 2px rgb(97, 141, 199);
+    letter-spacing:  2px;
+    text-transform: uppercase;
+    min-width: 320px;
+
+width: 100%;
+}
+  
+main{
+
+    padding: 1rem;
+
+}
+
+.gallery{
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 500px)); 
+    gap: 2rem;
+    */
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+    place-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    margin: 2rem 1rem;
+    
+    border: 2px solid pink;
+    border-radius:  10px ;
+    width: 90%;
+    max-width: 1300px;
+    
+
+    
+
+}
+
+.img{
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+
+}
+
+.photocard{
+    width: 100%;
+    padding: 2rem;
+    margin: 1rem;
+    border: 5px skyblue solid ;
+    border-radius: 15px;
+    box-shadow: 20px 20px 20px rgb(203, 233, 242);
+    max-width: 350px;
+    min-height: 950px;
+    display: grid;
+    grid-template-rows: auto;
+    gap: 0.5 rem;
+   text-align: center;
+   flex: 1 0 200px;
+   transition: 0.3s ease-in-out;
+
+}
+.galleryheading{
+    
+    text-align: center;
+    padding: 10px;
+    text-shadow: 1px 1px 1px rgb(97, 141, 199);
+}
+
+.photocard:hover{
+transform: scale(1.05);
+}
